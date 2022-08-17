@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const TodoSchema = new mongoose.Schema({
   todo: {
@@ -8,7 +8,7 @@ const TodoSchema = new mongoose.Schema({
   completed: {
     type: Boolean,
     required: true,
-  }
-})
+  },
+});
 
-module.exports = mongoose.model('Todo', TodoSchema)
+module.exports = mongoose.model('Todo', TodoSchema);
